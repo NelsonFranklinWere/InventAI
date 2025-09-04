@@ -1,0 +1,90 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: #333;
+        }
+        
+        .portfolio-hero {
+            background: linear-gradient(135deg, rgba(0, 128, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+            color: white;
+            padding: 100px 0 60px;
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #008000;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #DE2910;
+        }
+        
+        .project-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .tag-saas {
+            background-color: rgba(0, 128, 0, 0.1);
+            color: #008000;
+        }
+        
+        .tag-health {
+            background-color: rgba(220, 38, 38, 0.1);
+            color: #dc2626;
+        }
+        
+        .tag-education {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: #3b82f6;
+        }
+        
+        .tag-security {
+            background-color: rgba(139, 92, 246, 0.1);
+            color: #8b5cf6;
+        }
+        
+        .tag-content {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+        }
+        
+        .tag-development {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+        }
+        
+        .tag-logistics {
+            background-color: rgba(236, 72, 153, 0.1);
+            color: #ec4899;
+        }
+        
+        .tag-marketplace {
+            background-color: rgba(14, 165, 233, 0.1);
+            color: #0ea5e9;
+        }
+        
+        .filter-btn {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background-color: #008000;
+            color: white;
+            border-color: #008000;
+        }
