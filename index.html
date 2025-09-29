@@ -56,22 +56,26 @@
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "StriveGo",
-  "url": "https://strivego.online/",
-  "logo": "logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+254743869564",
-    "contactType": "customer service",
-    "areaServed": ["KE", "Africa"]
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/nelson-w-a557272b4/",
-    "https://x.com/OchiengNe88651/",
-    "https://github.com/Nelsonfrank516"
-  ]
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "StriveGo",
+    "url": "https://strivego.online/",
+    "logo": "logo.png",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254743869564",
+        "contactType": "customer service",
+        "areaServed": ["KE", "Africa"],
+        "email": "info@strivego.online",
+        "url": "https://strivego.online/#contact"
+    },
+    "sameAs": [
+        "https://www.facebook.com/profile.php?id=61581393475109",
+        "https://www.tiktok.com/@strivego",
+        "https://www.twitter.com/@strivego",
+        "https://www.instagram.com/strivego4/",
+        "https://www.linkedin.com/in/stivego-company-729746386/"
+    ]
 }
 </script>
     
@@ -132,12 +136,14 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section pt-20">
-        <div class="container mx-auto px-4 py-20">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Unleash AI Invention in your Business with Strive<span>Go</span></h1>
-                    <p class="text-xl mb-8">Automation and AI agents solving everyday problems in e-commerce, business, tech, WhatsApp business, and websites for Kenyan SMEs, Companies and Start-Ups.</p>
-                    <div class="flex flex-wrap gap-4">
+        <div class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
+            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0" id="hero-bg-video">
+                <source src="herovideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container mx-auto px-4 py-20 relative z-10">
+                <div class="relative min-h-[200px]">
+                    <div class="absolute -left-8 -bottom-48 md:-left-16 md:-bottom-64 flex flex-wrap gap-4 bg-white/70 dark:bg-deep-sapphire/70 p-3 md:p-4 rounded-tr-lg shadow-lg z-20" style="margin:0;">
                         <a href="https://wa.me/254743869564?text=Hello%20StriveGo,%20I%20want%20to%20learn%20more%20about%20your%20services" target="_blank" class="btn-whatsapp inline-flex items-center px-6 py-3 rounded-full text-white font-semibold shadow-lg">
                             <i class="fab fa-whatsapp mr-2"></i>
                             Chat on WhatsApp
@@ -148,11 +154,22 @@
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img src="home.png" alt="AI Technology in Kenya" class="rounded-lg shadow-xl floating">
-                </div>
             </div>
         </div>
+    <style>
+        /* Hero video background overlay for better text contrast */
+        #hero-bg-video::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(180deg,rgba(10,36,99,0.3) 0%,rgba(0,0,0,0.5) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+        @media (max-width: 768px) {
+            #hero-bg-video { min-height: 300px; }
+        }
+    </style>
     </section>
 
     <!-- Stats Section -->
@@ -420,7 +437,7 @@
                     <div class="flex justify-center space-x-3 mt-4">
                         <a href="https://www.linkedin.com/in/nelson-w-a557272b4/" class="text-gray-400 hover:text-quantum-cyan"><i class="fab fa-linkedin"></i></a>
                         <a href="https://x.com/OchiengNe88651/" class="text-gray-400 hover:text-quantum-cyan"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/Nelsonfrank516" class="text-gray-400 hover:text-quantum-cyan"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/NelsonFranklinWere" class="text-gray-400 hover:text-quantum-cyan"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 
@@ -953,7 +970,7 @@
                         </div>
                         <div>
                             <h4 class="font-semibold text-gray-900 dark:text-white">Email</h4>
-                            <p class="text-gray-600 dark:text-gray-300">info@strivego.co.ke</p>
+                            <p class="text-gray-600 dark:text-gray-300">info@strivego.online</p>
                         </div>
                     </div>
                     
@@ -967,25 +984,28 @@
                         </div>
                     </div>
                     
-                    <div class="mb-6">
+                    <!--div class="mb-6">
                         <h3 class="text-xl font-semibold mb-4">M-Pesa Payments</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">Send deposits to: <span class="font-semibold">+254 743 869 564</span></p>
                         <p class="text-sm text-gray-500">Please include your name and service required in the transaction message.</p>
-                    </div>
+                    </div -->
                     
                     <div class="mt-8">
                         <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
+                            <a href="https://www.facebook.com/profile.php?id=61581393475109" target="_blank" rel="noopener" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
+                            <a href="https://www.tiktok.com/@strivego" target="_blank" rel="noopener" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.twitter.com/@strivego" target="_blank" rel="noopener" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
+                            <a href="https://www.instagram.com/strivego4/" target="_blank" rel="noopener" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
                                 <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/stivego-company-729746386/" target="_blank" rel="noopener" class="w-10 h-10 bg-quantum-cyan rounded-full flex items-center justify-center text-white">
+                                <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
                     </div>
@@ -993,18 +1013,15 @@
                 
                 <div class="md:w-1/2 md:pl-8">
                     <h3 class="text-2xl font-semibold mb-6">Send us a Message</h3>
-                    
-                    <form class="space-y-6">
+                    <form class="space-y-6" id="contactForm" action="https://formsubmit.co/strivego4@gmail.com" method="POST">
                         <div>
                             <label for="name" class="block text-gray-700 mb-2">Your Name</label>
                             <input type="text" id="name" name="name" required class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-kenyan-green">
                         </div>
-                        
                         <div>
                             <label for="email" class="block text-gray-700 mb-2">Email Address</label>
                             <input type="email" id="email" name="email" required class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-kenyan-green">
                         </div>
-                        
                         <div>
                             <label for="service" class="block text-gray-700 mb-2">Service Interested In</label>
                             <select id="service" name="service" class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-kenyan-green">
@@ -1018,12 +1035,10 @@
                                 <option value="consulting">AI Consulting</option>
                             </select>
                         </div>
-                        
                         <div>
                             <label for="message" class="block text-gray-700 mb-2">Your Message</label>
                             <textarea id="message" name="message" rows="5" required class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-kenyan-green"></textarea>
                         </div>
-                        
                         <button type="submit" class="w-full bg-quantum-cyan text-white py-3 px-4 rounded-lg font-semibold shadow-md hover:bg-cyan-600 transition">Send Message</button>
                     </form>
                 </div>
@@ -1042,10 +1057,11 @@
                     </a>
                     <p class="text-gray-400 mb-4">AI-powered solutions for Kenyan businesses</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581393475109" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@strivego" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.twitter.com/@strivego" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/strivego4/" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/stivego-company-729746386/" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 
@@ -1087,7 +1103,7 @@
             </div>
             
             <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-                <p>&copy; 2023 StriveGo. All rights reserved. | Nairobi, Kenya</p>
+                <p>&copy; 2025 StriveGo. All rights reserved. | Nairobi, Kenya</p>
             </div>
         </div>
     </footer>
@@ -1095,6 +1111,15 @@
     <script>
         // DOM Content Loaded
         document.addEventListener('DOMContentLoaded', function() {
+            // Confirm form submit for contact form
+            var contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    if (!confirm('Thank you for Contacting us.Click okay to submit the form.')) {
+                        e.preventDefault();
+                    }
+                });
+            }
             // Mobile Menu Toggle
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
