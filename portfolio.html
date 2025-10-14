@@ -1,304 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - StriveGo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Our Projects | StriveGo — AI, Websites, and Digital Solutions in Kenya</title>
+
+  <!-- Core SEO -->
+  <meta name="description" content="Explore StriveGo’s AI, web, and mobile app projects across Kenya and Africa. We build smart digital solutions — websites, SaaS, automation, ecommerce, and consultancy for startups, SMEs, and corporates." />
+  <meta name="keywords" content="AI tools Kenya, software developers Nairobi, website design Kenya, mobile app developers Kenya, tech company Africa, digital transformation Kenya, SaaS developers Nairobi, business automation Kenya, web design Kenya, StriveGo projects, AI startup Kenya, software engineering Kenya, app development Nairobi, web developers Kenya, StriveGo tech solutions" />
+  <meta name="author" content="StriveGo Technologies" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#0b72ff" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://strivego.online/portfolio.html" />
+    <link rel="alternate" type="application/rss+xml" title="StriveGo RSS Feed" href="https://strivego.online/rss.xml" />
+    <meta name="google-site-verification" content="your-google-site-verification-code" />
+    <meta name="msvalidate.01" content="your-bing-site-verification-code" />
+    <meta name="yandex-verification" content="your-yandex-site-verification-code" />
+    <meta name="ahrefs-site-verification" content="your-ahrefs-site-verification-code" />
+    <meta name="pinterest-site-verification" content="your-pinterest-site-verification-code" />
+    <meta name="alexaVerifyID" content="your-alexa-site-verification-code" />
+    <meta name="naver-site-verification" content="your-naver-site-verification-code" />
+    <meta name="baidu-site-verification" content="your-baidu-site-verification-code" />
+    <meta name="yahoo-site-verification" content="your-yahoo-site-verification-code" />
+    <meta name="sogou-site-verification" content="your-sogou-site-verification-code" />
+    <meta name="duckduckgo-site-verification" content="your-duckduckgo-site-verification-code" />
+    <meta name="seznam-site-verification" content="your-seznam-site-verification-code" />
+    <meta name="quantcast" content="your-quantcast-verification-code" />
+    <meta name="wot-verification" content="your-wot-site-verification-code" />
+    <meta name="site-verification" content="your-site-verification-code" />
+    <meta name="google" content="notranslate" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="nopagereadaloud" />
+    <meta name="google" content="noarchive" />
+    <meta name="google" content="noydir" />
+    <meta name="google" content="notranslate" />
+    <meta name="google" content="nositelinkssearchbox" />
+    <meta name="google" content="nopagereadaloud" />
+    <meta name="google" content="noarchive" />
+    <meta name="google" content="noydir" />
     
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'quantum-cyan': '#00C2DA',
-                        'deep-sapphire': '#0A2463',
-                        'light-gray': '#F9F9F9'
-                    },
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif']
-                    }
-                }
-            }
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.jpeg" />
+
+  <!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
+  <meta property="og:locale" content="en_KE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="StriveGo" />
+  <meta property="og:title" content="StriveGo — AI, Web & Mobile App Projects in Kenya" />
+  <meta property="og:description" content="Discover StriveGo’s innovative tech projects. We build AI tools, business automation software, web systems, and digital platforms for Africa’s growing enterprises." />
+  <meta property="og:url" content="https://strivego.online/portfolio.html" />
+  <meta property="og:image" content="https://strivego.online/logo.jpeg" />
+  <meta property="og:image:alt" content="StriveGo AI, web & mobile development projects" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@OchiengNe88651" />
+  <meta name="twitter:creator" content="@OchiengNe88651" />
+  <meta name="twitter:title" content="StriveGo — AI, Web & Mobile Development Projects" />
+  <meta name="twitter:description" content="StriveGo builds AI, web, and mobile solutions empowering Kenyan startups, SMEs, and global innovators. Explore our top projects." />
+  <meta name="twitter:image" content="https://strivego.online/logo.jpeg" />
+
+  <!-- Alternate Languages -->
+  <link rel="alternate" href="https://strivego.online/portfolio.html" hreflang="en" />
+  <link rel="alternate" href="https://strivego.online/sw/portfolio.html" hreflang="sw" />
+  <link rel="alternate" href="https://strivego.online/portfolio.html" hreflang="x-default" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://strivego.online/#organization",
+        "name": "StriveGo Technologies",
+        "url": "https://strivego.online/",
+        "logo": "https://strivego.online/roomm1.png",
+        "description": "StriveGo is a Kenyan-based technology company specializing in AI-powered tools, web and mobile app development, automation systems, and digital consultancy for African businesses.",
+        "sameAs": [
+          "https://www.linkedin.com/in/nelson-w-a557272b4/",
+          "https://x.com/OchiengNe88651",
+          "https://github.com/Nelsonfrank516"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+254743869564",
+            "contactType": "customer support",
+            "areaServed": "Africa",
+            "availableLanguage": ["English", "Swahili"]
+          }
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Nelson Franklin Ochieng Were",
+          "jobTitle": "Founder & Software Engineer",
+          "url": "https://strivego.online/",
+          "sameAs": [
+            "https://www.linkedin.com/in/nelson-w-a557272b4/",
+            "https://github.com/Nelsonfrank516"
+          ]
         }
-    </script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="portfolio.css">
-   
-    <!-- SEO Meta Tags -->
-<meta name="description" content="StriveGo provides AI-powered solutions, website and mobile app development, ecommerce, and consultancy for businesses, corporates, shopkeepers, and managers in Nairobi, Kenya, and Africa. Get your business online fast!">
-<meta name="keywords" content="AI solutions Kenya, website development Nairobi, mobile app developers Kenya, ecommerce Nairobi, business consultancy Africa, small business websites, corporate websites Kenya, shopkeeper websites, Nairobi tech, Kenya digital solutions, Africa web development">
-<meta name="author" content="StriveGo Team">
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://strivego.online/#website",
+        "url": "https://strivego.online/",
+        "name": "StriveGo",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://strivego.online/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://strivego.online/portfolio.html",
+        "url": "https://strivego.online/portfolio.html",
+        "name": "StriveGo Projects — AI & Tech Development Portfolio",
+        "isPartOf": { "@id": "https://strivego.online/#website" },
+        "about": [
+          { "@type": "Thing", "name": "AI solutions" },
+          { "@type": "Thing", "name": "Web development" },
+          { "@type": "Thing", "name": "Mobile app development" },
+          { "@type": "Thing", "name": "SaaS platforms" },
+          { "@type": "Thing", "name": "Automation tools" },
+          { "@type": "Thing", "name": "Digital consultancy" },
+          { "@type": "Thing", "name": "Kenyan tech startups" }
+        ],
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-10-13",
+        "inLanguage": "en-KE",
+        "primaryImageOfPage": "https://strivego.online/logo.jpeg"
+      },
+      {
+        "@type": "Product",
+        "name": "AI Automation Tools",
+        "description": "Custom AI systems for small businesses, automation workflows, and chatbot integrations.",
+        "brand": "StriveGo",
+        "category": "Software Development",
+        "url": "https://strivego.online/projects/ai-tools"
+      },
+      {
+        "@type": "Product",
+        "name": "Web Development & SEO",
+        "description": "Responsive websites, ecommerce stores, and SEO-ready landing pages built by StriveGo.",
+        "brand": "StriveGo",
+        "category": "Web Development",
+        "url": "https://strivego.online/projects/websites"
+      },
+      {
+        "@type": "Product",
+        "name": "Mobile App Development",
+        "description": "Android and cross-platform apps tailored for business and customer engagement.",
+        "brand": "StriveGo",
+        "category": "App Development",
+        "url": "https://strivego.online/projects/apps"
+      }
+    ]
+  }
+  </script>
 
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="StriveGo - AI, Websites, Mobile Apps & Consultancy for Kenyan Businesses">
-<meta property="og:description" content="AI-powered automation, websites, mobile apps, ecommerce, and consultancy for businesses, corporates, shopkeepers, and managers in Nairobi, Kenya, and Africa.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://strivego.online/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80">
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="StriveGo - AI, Websites, Mobile Apps & Consultancy for Kenyan Businesses">
-<meta name="twitter:description" content="AI-powered automation, websites, mobile apps, ecommerce, and consultancy for businesses, corporates, shopkeepers, and managers in Nairobi, Kenya, and Africa.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80">
-
-<!-- Structured Data (JSON-LD) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "StriveGo",
-  "url": "https://strivego.online/",
-  "logo": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+254743869564",
-    "contactType": "customer service",
-    "areaServed": ["KE", "Africa"]
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/nelson-w-a557272b4/",
-    "https://x.com/OchiengNe88651/",
-    "https://github.com/Nelsonfrank516"
-  ]
-}
-</script>
-    
+  <!-- Fonts and Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2">
-                <span class="text-2xl font-bold text-quantum-cyan">AI</span>
-                <span class="text-xl font-bold">AImpact</span>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text text-quantum-cyan">Strive</span>
+                <span class="logo-text">GO</span>
             </a>
             
-            <a href="index.html" class="text-quantum-cyan font-semibold">
-                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Home
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="portfolio-hero pt-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Portfolio</h1>
-                <p class="text-xl max-w-3xl mx-auto">Discover how AImpact is transforming businesses across Kenya with cutting-edge AI solutions</p>
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p class="text-xl">Discover how StriveGo is transforming businesses across Kenya with cutting-edge AI solutions</p>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Filters -->
-    <section class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center mb-8">Filter Projects</h2>
-            
-            <div class="flex flex-wrap justify-center gap-3">
-                <button class="filter-btn px-4 py-2 rounded-full active" data-filter="all">All Projects</button>
-                <button class="filter-btn px-4 py-2 rounded-full" data-filter="saas">SaaS Solutions</button>
-                <button class="filter-btn px-4 py-2 rounded-full" data-filter="health">Healthcare</button>
-                <button class="filter-btn px-4 py-2 rounded-full" data-filter="education">Education</button>
-                <button class="filter-btn px-4 py-2 rounded-full" data-filter="content">Content & Social</button>
-                <button class="filter-btn px-4 py-2 rounded-full" data-filter="development">Development Tools</button>
-                <button class="filter-btn px-4 py-2 rounded-full" data-filter="marketplace">Marketplace</button>
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <h2>Filter Projects</h2>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="saas">SaaS Solutions</button>
+                    <button class="filter-btn" data-filter="health">Healthcare</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="content">Content & Social</button>
+                    <button class="filter-btn" data-filter="development">Development Tools</button>
+                    <button class="filter-btn" data-filter="marketplace">Marketplace</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Grid -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
                 
                 <!-- Project 1: B2B Sales Workflow Automation -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="saas">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-robot text-xl"></i>
+                <div class="project-card" data-category="saas">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">B2B Sales Workflow Automation AI Agent</h3>
-                    <p class="text-gray-600 mb-4">AI-powered sales automation that handles repetitive tasks, freeing sales professionals to focus on relationship building and closing deals.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-saas">SaaS</span>
-                        <span class="project-tag tag-development">Automation</span>
+                    <h3>B2B Sales Workflow Automation AI Agent</h3>
+                    <p class="text-gray-600">AI-powered sales automation that handles repetitive tasks, freeing sales professionals to focus on relationship building and closing deals.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">SaaS</span>
+                        <span class="project-tag">Automation</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 2: Mental Health App -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="health">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-heart text-xl"></i>
+                <div class="project-card" data-category="health">
+                    <div class="project-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI-Powered Mental Health Companion</h3>
-                    <p class="text-gray-600 mb-4">Mental health support app providing real-time emotional support through AI avatars and voice agents, with crisis detection capabilities.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-health">Healthcare</span>
-                        <span class="project-tag tag-content">Mobile App</span>
+                    <h3>AI-Powered Mental Health Companion</h3>
+                    <p class="text-gray-600">Mental health support app providing real-time emotional support through AI avatars and voice agents, with crisis detection capabilities.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Healthcare</span>
+                        <span class="project-tag">Mobile App</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 3: Corporate Learning Platform -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="education">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-graduation-cap text-xl"></i>
+                <div class="project-card" data-category="education">
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI-Powered Corporate Learning Platform</h3>
-                    <p class="text-gray-600 mb-4">SaaS platform providing personalized learning paths that dynamically adapt to each employee's unique requirements and skill gaps.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-education">EdTech</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>AI-Powered Corporate Learning Platform</h3>
+                    <p class="text-gray-600">SaaS platform providing personalized learning paths that dynamically adapt to each employee's unique requirements and skill gaps.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">EdTech</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 4: Cybersecurity Agent -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="saas">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-shield-alt text-xl"></i>
+                <div class="project-card" data-category="saas">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Automated Enterprise Cybersecurity Agent</h3>
-                    <p class="text-gray-600 mb-4">AI agent that continuously monitors, analyzes, and automates threat detection and response for proactive cybersecurity.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-security">Security</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>Automated Enterprise Cybersecurity Agent</h3>
+                    <p class="text-gray-600">AI agent that continuously monitors, analyzes, and automates threat detection and response for proactive cybersecurity.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Security</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 5: Cross-Platform Content Management -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="content">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-share-alt text-xl"></i>
+                <div class="project-card" data-category="content">
+                    <div class="project-icon">
+                        <i class="fas fa-share-alt"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI-Powered Cross-Platform Content Management</h3>
-                    <p class="text-gray-600 mb-4">Unified platform that enables businesses to create content once and distribute it across multiple social platforms with optimization.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-content">Content</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>AI-Powered Cross-Platform Content Management</h3>
+                    <p class="text-gray-600">Unified platform that enables businesses to create content once and distribute it across multiple social platforms with optimization.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Content</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 6: Code Generator & Debugger -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="development">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-code text-xl"></i>
+                <div class="project-card" data-category="development">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI Code Generator & Debugger for Mobile Development</h3>
-                    <p class="text-gray-600 mb-4">AI assistant for mobile developers that generates code, debugs errors, and suggests best practices across multiple frameworks.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-development">Development</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>AI Code Generator & Debugger for Mobile Development</h3>
+                    <p class="text-gray-600">AI assistant for mobile developers that generates code, debugs errors, and suggests best practices across multiple frameworks.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Development</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 7: Healthcare Triage & Symptom Checker -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="health">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-stethoscope text-xl"></i>
+                <div class="project-card" data-category="health">
+                    <div class="project-icon">
+                        <i class="fas fa-stethoscope"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI-Powered Healthcare Triage & Symptom Checker</h3>
-                    <p class="text-gray-600 mb-4">AI platform that allows patients to input symptoms and receive triage-level guidance before visiting a doctor.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-health">Healthcare</span>
-                        <span class="project-tag tag-content">Mobile App</span>
+                    <h3>AI-Powered Healthcare Triage & Symptom Checker</h3>
+                    <p class="text-gray-600">AI platform that allows patients to input symptoms and receive triage-level guidance before visiting a doctor.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Healthcare</span>
+                        <span class="project-tag">Mobile App</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 8: Supply Chain & Logistics Optimizer -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="saas">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-truck text-xl"></i>
+                <div class="project-card" data-category="saas">
+                    <div class="project-icon">
+                        <i class="fas fa-truck"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI Supply Chain & Logistics Optimizer for SMEs</h3>
-                    <p class="text-gray-600 mb-4">AI tool that helps small/medium businesses predict demand, optimize inventory, and plan cost-effective delivery routes.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-logistics">Logistics</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>AI Supply Chain & Logistics Optimizer for SMEs</h3>
+                    <p class="text-gray-600">AI tool that helps small/medium businesses predict demand, optimize inventory, and plan cost-effective delivery routes.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Logistics</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 9: Multiagent Platform for SMEs -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="saas">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-users text-xl"></i>
+                <div class="project-card" data-category="saas">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">SaaS Multiagent Platform for Kenyan SMEs</h3>
-                    <p class="text-gray-600 mb-4">WhatsApp/social media multi-agent platform that enables small businesses to manage tasks, customers, and employees effectively.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-saas">SaaS</span>
-                        <span class="project-tag tag-content">Social Media</span>
+                    <h3>SaaS Multiagent Platform for Kenyan SMEs</h3>
+                    <p class="text-gray-600">WhatsApp/social media multi-agent platform that enables small businesses to manage tasks, customers, and employees effectively.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">SaaS</span>
+                        <span class="project-tag">Social Media</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 10: EdTech AI Platform -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="education">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-book-open text-xl"></i>
+                <div class="project-card" data-category="education">
+                    <div class="project-icon">
+                        <i class="fas fa-book-open"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">EdTech AI Platform</h3>
-                    <p class="text-gray-600 mb-4">AI-driven e-learning platform that aggregates high-quality learning content and provides a 360-degree view of student progress.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-education">EdTech</span>
-                        <span class="project-tag tag-content">Content</span>
+                    <h3>EdTech AI Platform</h3>
+                    <p class="text-gray-600">AI-driven e-learning platform that aggregates high-quality learning content and provides a 360-degree view of student progress.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">EdTech</span>
+                        <span class="project-tag">Content</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 11: Content Management with Targeted Ads -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="content">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-ad text-xl"></i>
+                <div class="project-card" data-category="content">
+                    <div class="project-icon">
+                        <i class="fas fa-ad"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Content Management Platform with Targeted Ads</h3>
-                    <p class="text-gray-600 mb-4">Niche-specific platform that creates and curates SEO-optimized content with targeted ads for passive income generation.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-content">Content</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>Content Management Platform with Targeted Ads</h3>
+                    <p class="text-gray-600">Niche-specific platform that creates and curates SEO-optimized content with targeted ads for passive income generation.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Content</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 12: GigaForm (Local Gig Marketplace) -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="marketplace">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-handshake text-xl"></i>
+                <div class="project-card" data-category="marketplace">
+                    <div class="project-icon">
+                        <i class="fas fa-handshake"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">GigaForm - Local Gig Marketplace</h3>
-                    <p class="text-gray-600 mb-4">Gig economy platform with M-Pesa escrow that matches jobs with vetted professionals and releases payment after client approval.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-marketplace">Marketplace</span>
-                        <span class="project-tag tag-content">Mobile App</span>
+                    <h3>GigaForm - Local Gig Marketplace</h3>
+                    <p class="text-gray-600">Gig economy platform with M-Pesa escrow that matches jobs with vetted professionals and releases payment after client approval.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Marketplace</span>
+                        <span class="project-tag">Mobile App</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
                 <!-- Project 13: AI Agents Automation -->
-                <div class="project-card bg-white p-6 rounded-lg shadow" data-category="health">
-                    <div class="w-12 h-12 bg-quantum-cyan rounded-full flex items-center justify-center text-white mb-4">
-                        <i class="fas fa-cogs text-xl"></i>
+                <div class="project-card" data-category="health">
+                    <div class="project-icon">
+                        <i class="fas fa-cogs"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">AI Agents Automation for Healthcare & Business</h3>
-                    <p class="text-gray-600 mb-4">Modular AI-agent platform that automates front-desk processes with conversational interfaces and integration with existing systems.</p>
-                    <div class="mb-4">
-                        <span class="project-tag tag-health">Healthcare</span>
-                        <span class="project-tag tag-saas">SaaS</span>
+                    <h3>AI Agents Automation for Healthcare & Business</h3>
+                    <p class="text-gray-600">Modular AI-agent platform that automates front-desk processes with conversational interfaces and integration with existing systems.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Healthcare</span>
+                        <span class="project-tag">SaaS</span>
                     </div>
-                    <a href="#" class="text-kenyan-red font-semibold">View Project →</a>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 
             </div>
@@ -306,18 +410,18 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-quantum-cyan text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
-            <p class="text-xl mb-10 max-w-3xl mx-auto">Let's discuss how we can create an AI solution tailored to your business needs</p>
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p class="text-xl max-w-3xl mx-auto">Let's discuss how we can create an AI solution tailored to your business needs</p>
             
-            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-                <a href="https://wa.me/254743869564?text=Hello%20AImpact,%20I%20want%20to%20discuss%20a%20project" target="_blank" class="bg-white text-quantum-cyan inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition">
-                    <i class="fab fa-whatsapp mr-2 text-xl"></i>
+            <div class="cta-buttons">
+                <a href="https://wa.me/254743869564?text=Hello%20StriveGo,%20I%20want%20to%20discuss%20a%20project" target="_blank" class="cta-btn cta-btn-primary">
+                    <i class="fab fa-whatsapp"></i>
                     Chat on WhatsApp
                 </a>
-                <a href="mailto:info@aimpact.co.ke" class="border-2 border-white text-white inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-white hover:text-quantum-cyan transition">
-                    <i class="fas fa-envelope mr-2 text-xl"></i>
+                <a href="mailto:info@strivego.online" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-envelope"></i>
                     Send us an Email
                 </a>
             </div>
@@ -325,57 +429,57 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-kenyan-black text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <a href="index.html" class="flex items-center space-x-2 mb-4">
-                        <span class="text-2xl font-bold text-quantum-cyan">AI</span>
-                        <span class="text-xl font-bold text-white">AImpact</span>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text text-quantum-cyan">AI</span>
+                        <span class="logo-text text-white">StriveGo</span>
                     </a>
-                    <p class="text-gray-400 mb-4">AI-powered solutions for Kenyan businesses</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <p class="text-gray-400">AI-powered solutions for Kenyan businesses</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html#services" class="text-gray-400 hover:text-white">WhatsApp Bots</a></li>
-                        <li><a href="index.html#services" class="text-gray-400 hover:text-white">Content Management</a></li>
-                        <li><a href="index.html#services" class="text-gray-400 hover:text-white">Edutech Solutions</a></li>
-                        <li><a href="index.html#services" class="text-gray-400 hover:text-white">Web Development</a></li>
-                        <li><a href="index.html#services" class="text-gray-400 hover:text-white">App Development</a></li>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html#services">WhatsApp Bots</a></li>
+                        <li><a href="index.html#services">Content Management</a></li>
+                        <li><a href="index.html#services">Edutech Solutions</a></li>
+                        <li><a href="index.html#services">Web Development</a></li>
+                        <li><a href="index.html#services">App Development</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Company</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html#about" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="index.html#about" class="text-gray-400 hover:text-white">Our Team</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
-                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white">Portfolio</a></li>
-                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#about">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
-                    <ul class="space-y-2">
+                <div class="footer-links">
+                    <h3>Contact</h3>
+                    <ul>
                         <li class="text-gray-400">Nairobi, Kenya</li>
                         <li class="text-gray-400">+254 743 869 564</li>
-                        <li class="text-gray-400">info@aimpact.co.ke</li>
+                        <li class="text-gray-400">info@strivego.online</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-                <p>&copy; 2023 AImpact. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StriveGo. All rights reserved.</p>
             </div>
         </div>
     </footer>
